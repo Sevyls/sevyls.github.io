@@ -20,87 +20,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <style>
-    * {
-      line-height: 1.2;
-      margin: 0;
-    }
-
-    html {
-      color: #888;
-      display: table;
-      font-family: Helvetica, Arial, sans-serif;
-      height: 100%;
-      text-align: center;
-      width: 100%;
-    }
-
-    body {
-      display: table-cell;
-      background-color: whitesmoke;
-    }
-
-    .list {
-      width:100%;
-      height: 100%;
-    }
-
-    .list-item {
-      display: inline-block;
-      width: 100%;
-      margin: 2em auto;
-    }
-
-    h1 {
-      //color: #555;
-      color: black;
-      font-family: sans-serif;
-      font-size: 2em;
-      font-weight: 400;
-    }
-
-    .headline {
-      font-size: 6em;
-      font-family: 'Krub', sans-serif;
-      font-weight: bold;
-      margin-bottom: 1em;
-    }
-
-    p {
-      margin: 0 auto;
-      width: 280px;
-    }
-
-    .social-link {
-      padding: 0 1.5em;
-    }
-
-    .social-link a {
-      text-decoration: none
-    }
-
-    @media only screen and (max-width: 450px) {
-
-      body,
-      p {
-        width: 95%;
-      }
-
-      h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
-      }
-
-      .headline {
-        font-size: 2em;
-      }
-
-      .social-link {
-        padding: 0.1em;
-      }
-    }
-  </style>
-
+  <link rel="stylesheet" href="css/styles.css">
+  
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -115,11 +36,11 @@
     </div>
 
     <div class="list-item">
-      <span class="social-link">
+      <!--<span class="social-link">
         <a href="https://www.twitter.com/sevyls">
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAADIUlEQVRoge3ZX4hVVRTH8Y8zQU6l/RPLosiKwiQopKckQYrqQSiIIaGg3gxFIciC9CGKHlIk0JeiwDeVguilhtCXCCvoH4hREP3DwrJiHPszo87cHtYd5nQ8c+6/feYMdH+wuOfee/Ze68vZZ+2196avvvr6X2hB3QHghqYtwRiO4Qgm6wyqXS3CdnyNRoH9ilcEYJmuxJ1Ff9yaKtISPYhfFAPkbRwvYDDXx3XYg39we97BMvyFhysJP7QVU9qDyNpbWI1n8IEYdg28UeTkyeafE7inAohHuwAos5+xtMjRO5mbxvFQQohr8XdCiBNY2ez7ItybdfZ97uZJbE4EsjchxOcYxgbsw5+4L+tsdJaG+3FxDxCLxRNOBTKZ+/5U3uHxksbfYm2XIMMJIfL2UpHDD9to+KZIfZ3ouQoApvDsbA53ttnJOF4z87K10quJIc7ggTKHd3TY4RTew+O4rKTf3YlBxsogpnWoy85PN9s+j3W42kwdtzUxyGg7ILdIl+8nREr/LjHIsTKAbBW83rkpbj7Zl0UAA83PQVE6b8JBPCIKsvmoH1rdcMIM9Y/K55U6bU9R8AOZ608z19fgilbkNal0aMG7cxRIrzrc6oZLcFL9Q6fMTjp3kYX/PpFRvNiKtmaNaHMtP6j7SXEubLgT6kViOVl30HkbE4uojnQ+Xja/JsbdnUJktVKs7v6oGWIKN5cFet4sv6/CY02A3/Gx2JAozBhzoANiD6xjDeE39Q+nhqisb+wGYlob5wFEA7t6gSCG0UjNEN/gwl5BiN2TwzVBnMWaFBDTGsLrutvq7MWeTgmR1Wq8LRb/VUMcMAdHHotxv9hTqmLCHBETcuUawBaxVZka4qAYypUDrMNHFQA0RAVR6ZO4Ck/gq4oAzkjwYi/Abc0OT4nK91IsF2XKWqzo1UmJjopS6JMUnS0VC/rTqs9G0zaKbViYAiCvm8R5w0TFADtweRUAeS0RBzyfJQr+LN4XQ+iCqoJuNemswN24S5yeXt9GmzGRGL4Q6fSQWA5Uqk5nzyFxHrhMJIaFYiieEgDH8VPKAPvqq2b9C53t8lAzqxI/AAAAAElFTkSuQmCC"/>
         </a>
-      </span>
+      </span>-->
       <span class="social-link">
         <a href="https://github.com/Sevyls">
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAEJklEQVRoge3ZS2heRRQH8J8xIalpah82VolWqa9INYIKaqoixUerBRFB8LURxSeRom4VN+JGLBFcuXHlRtGFz6ogqPjoopHWapoarVVbkJpYm/pI/FzM/ezNzfeY+73SRf5wyM29M+ec/8yZmTPnYwHHFo5roK5luBqDOB9r0Ivu5PthHMB3+Bof4yNMNNCHmtGJO/AuplHIKdN4G7cnulqORdiMnyKcjZV9eBRdrSKxAWMNJJCV3bi+mQQ6saWJBLLysjDzDcXJ2NZCEkX5QtgwGoIzhOluNYmijCY+1IWV+GYeSRRlDKtqJdFlfsKpUpjVtEW/eAw4n5XhvCQ2VFH4hBB2l+BJfF+Hc7vwOAaE7OC5Ku2viyWxSPVzoi/TpyshdATvYwjrcLaQonTjnOTdg3gDh/AIjs/oGqhie1RkiG2uoqig/OnbEWOgSttTIuwPVVPeKS7taPhBlcKqCPs/ysxKW0bJrTg1wtjqOp2thDURbfpwS/pFlsjdkcYujGxXCy6KbHdX+p80kWVYH6lkbWS7WjAQ2e5aLCn14WZx2+WksCCbhX78HenLpmKn9IysizT0En6p39+y2IXXItteWXxIE+mP7PxKrEd14NXIdueVejmq+lT+g/a63ayOcyN8KQgJLWbPyPIIA5PCPbvZmIpst6L4kB7dnoiOPULlpZDDqVpwYup5WkhnYKnZlZ//fU4TKTa4Br8lnSeEdKRlBYEEO1L+tDvqcNGf5UKxomQ5a0IY6c+wHXvwq7BD7UnJbc3xfRaGlV8XhxO/CjhY7JBm9K2QoX6IESE1Hxdm5/dEJh0l3Ey0CeHVg8WJrBRSo9OFQ/MGYbH3Mzu0xhMinwsVwTOFMOtNKVua/L1XqHI0A8OJ/ilh0I4kz/vxA/ZiZ0JkvJSCp8Vfhv4Qf4DmwX34N4cfT5VSsj6HgoIwSvdoTP24E8/mJFEQImYOTsBfORUV8KmQ82RvejHoFgZjTw12/5S6F2VH8x2ly5V3Jp2ewUllnDogXHM/ERbhXmF3mUy+r3B0wV6Aq4QRXRzDuATewo3lPm5SfssbFO7g+8u0yYbdY0KFsoje5N1URP8Y2ViJZZvw+0WpjiPJ90uFrbgSicEKNgYbQGa3uZfCORiqoKA4lWuFMDwkrKuDQihtxU3VDOD+Ook8FGFDB74qo+DNGAURaKtgo5pslyMDvwIzJZTMaNz58UANJGZwWV5DL5RRNiEU1vpExGkFnFUDkS21GOrABzkN5TlLOnLqfk++AuAsLJEvlvMiVu9OIc+rC6uFn5Pni8gOnFYXgxR6hJO01US2asBMZNEhpNildrNGE5nB85pc6LgYX5ZxIC9K6RjB5Q3xNALtwhac/h1lXw16fk71H8PDWlNumoM2IW15XYVMtAI2JX03qu9MWsACmoX/ALeEN4NrGxnlAAAAAElFTkSuQmCC"/>
